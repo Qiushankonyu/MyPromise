@@ -236,7 +236,6 @@ class MyPromise {
     } else {
       //如果是一个普通值就将该数据包装成一个Promise对象后返回
       return new MyPromise((resolve, reject) => {
-        console.log('resolve - 创建新的Promise实例对象');
         resolve(value);
       })
     }
